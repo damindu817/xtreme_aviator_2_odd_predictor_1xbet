@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xtreme Aviator Predictor : 1xbet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #00ffff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .info {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+    .highlight {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00ff99;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Xtreme Aviator Predictor : 1xbet</h1>
+
+  <div class="info">Date: <span id="currentDate"></span></div>
+  <div class="info">Time: <span id="currentTime"></span></div>
+  <div class="info">Last Update Chart: <span id="lastUpdate">--</span></div>
+  <div class="info">ODD: <span id="oddValue" class="highlight">--</span></div>
+  <div class="info">Next Signal Time: <span id="signalTime" class="highlight">--</span></div>
+
+  <footer>POWERED BY XTREME PREDICTOR © 2025</footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      document.getElementById("currentDate").textContent = now.toLocaleDateString();
+      document.getElementById("currentTime").textContent = now.toLocaleTimeString();
+
+      // Simulate chart and signal data
+      const simulatedSignal = "08:44:30";
+      const simulatedOdd = "2×";
+
+      document.getElementById("lastUpdate").textContent = now.toLocaleTimeString();
+      document.getElementById("signalTime").textContent = simulatedSignal;
+      document.getElementById("oddValue").textContent = simulatedOdd;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+</body>
+</html>
